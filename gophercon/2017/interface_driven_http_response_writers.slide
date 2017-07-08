@@ -46,6 +46,8 @@ Pros
 
 - A consistent API for writing data of about any type
 - DRY
+- You can still have functions like WriteJSON that call Write with some defaults
+- Allows data transformations just prior to writing the response
 
 Cons
 
