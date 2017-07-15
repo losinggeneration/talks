@@ -18,6 +18,13 @@ Most response writers follow something like
 * What if the response writer was able to look something like this:
 .code interface_driven_http_response_writers/interface_writer.go
 
+* Read this
+
+*** Functional options for friendly APIs
+
+.link https://dave.cheney.net/2014/10/17/functional-options-for-friendly-apis
+
+
 * What else can this do?
 
 * Write headers

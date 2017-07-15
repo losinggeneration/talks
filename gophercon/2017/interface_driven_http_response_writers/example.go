@@ -8,11 +8,11 @@ type GopherCon struct {
 	Name string
 }
 
-// Mixed handler that can return JSON, XML, & plain text
+// Mixed handler that can return JSON & XML
 func MixedHandler(w http.ResponseWriter, r *http.Request) {
 	if err := response.Write(w,
 		GopherCon{456, "GopherCon 2017"},
-		response.Acceptable(r, jsonAccept, geojsonAccept, xmlAccept),
+		response.Acceptable(r, jsonAccept, xmlAccept),
 	); err != nil {
 		log.Printf("Error: %+v", err)
 	}
